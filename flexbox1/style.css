@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.flex-container {
+    display: flex;
+    /* flex-direction: row; MUDA A FORMA COMO SERA ALINHADO E A ORDEM*/
+    /*flex-wrap: wrap; PERMITE O DISPLAY FLEX QUEBRAR A LINHA PARA BAIXO*/
+    flex-flow: row nowrap; /*RESUME OS 2 COMANDOS ACIMA*/
+    justify-content: space-between; /*MUDA A DIREÇÃO VERTICALMENTE E O ESPAÇAMENTO EXTERNO*/
+    align-items: flex-start; /*SOMENTE MUDA A DIREÇÃO HORIZONTAL E O ESPAÇAMENTO INTERNO*/
+    background-color: yellow;
+    height: 600px;
+}
+
+.flex-item {
+    /*flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 1;*/
+    /*flex: 1 1 320px; RESUME OS COMANDOS ACIMA*/
+    color: white;
+    width: 100%;
+    background-color: red;
+}
+.flex-item:nth-child(1) {
+    order: -1;
+}
+
+.flex-item:nth-child(2) {
+    order: -2;
+}
+
